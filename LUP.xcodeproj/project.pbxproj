@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BA0893724743FDC00B08BD8 /* QR.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0893624743FDC00B08BD8 /* QR.c */; };
+		5BA0893A2474403500B08BD8 /* MatrOperations.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BA089392474403500B08BD8 /* MatrOperations.c */; };
+		5BA0893D2474413B00B08BD8 /* LUP.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0893C2474413B00B08BD8 /* LUP.c */; };
+		5BA08940247441A300B08BD8 /* VectOperations.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0893F247441A300B08BD8 /* VectOperations.c */; };
+		5BA089432474675A00B08BD8 /* Jacobi_Seidel.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BA089422474675A00B08BD8 /* Jacobi_Seidel.c */; };
 		FDC5FAAF2445B95D000FEBD7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FDC5FAAE2445B95D000FEBD7 /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +28,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5BA0893524743FDC00B08BD8 /* QR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QR.h; sourceTree = "<group>"; };
+		5BA0893624743FDC00B08BD8 /* QR.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QR.c; sourceTree = "<group>"; };
+		5BA089382474403500B08BD8 /* MatrOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrOperations.h; sourceTree = "<group>"; };
+		5BA089392474403500B08BD8 /* MatrOperations.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MatrOperations.c; sourceTree = "<group>"; };
+		5BA0893B2474413B00B08BD8 /* LUP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LUP.h; sourceTree = "<group>"; };
+		5BA0893C2474413B00B08BD8 /* LUP.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LUP.c; sourceTree = "<group>"; };
+		5BA0893E247441A300B08BD8 /* VectOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VectOperations.h; sourceTree = "<group>"; };
+		5BA0893F247441A300B08BD8 /* VectOperations.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VectOperations.c; sourceTree = "<group>"; };
+		5BA089412474675A00B08BD8 /* Jacobi_Seidel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Jacobi_Seidel.h; sourceTree = "<group>"; };
+		5BA089422474675A00B08BD8 /* Jacobi_Seidel.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Jacobi_Seidel.c; sourceTree = "<group>"; };
 		FDC5FAAB2445B95D000FEBD7 /* LUP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LUP; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC5FAAE2445B95D000FEBD7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +53,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5BE1699224751E5700A5711F /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				5BA0893524743FDC00B08BD8 /* QR.h */,
+				5BA0893624743FDC00B08BD8 /* QR.c */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		5BE1699324751E6800A5711F /* LUP */ = {
+			isa = PBXGroup;
+			children = (
+				5BA0893B2474413B00B08BD8 /* LUP.h */,
+				5BA0893C2474413B00B08BD8 /* LUP.c */,
+			);
+			path = LUP;
+			sourceTree = "<group>";
+		};
+		5BE1699424751E7500A5711F /* MatrOperations */ = {
+			isa = PBXGroup;
+			children = (
+				5BA089382474403500B08BD8 /* MatrOperations.h */,
+				5BA089392474403500B08BD8 /* MatrOperations.c */,
+			);
+			path = MatrOperations;
+			sourceTree = "<group>";
+		};
+		5BE1699524751E9300A5711F /* VectOperations */ = {
+			isa = PBXGroup;
+			children = (
+				5BA0893E247441A300B08BD8 /* VectOperations.h */,
+				5BA0893F247441A300B08BD8 /* VectOperations.c */,
+			);
+			path = VectOperations;
+			sourceTree = "<group>";
+		};
+		5BE1699624751EAA00A5711F /* Jacobi_Seidel */ = {
+			isa = PBXGroup;
+			children = (
+				5BA089412474675A00B08BD8 /* Jacobi_Seidel.h */,
+				5BA089422474675A00B08BD8 /* Jacobi_Seidel.c */,
+			);
+			path = Jacobi_Seidel;
+			sourceTree = "<group>";
+		};
 		FDC5FAA22445B95C000FEBD7 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +117,11 @@
 		FDC5FAAD2445B95D000FEBD7 /* LUP */ = {
 			isa = PBXGroup;
 			children = (
+				5BE1699624751EAA00A5711F /* Jacobi_Seidel */,
+				5BE1699524751E9300A5711F /* VectOperations */,
+				5BE1699424751E7500A5711F /* MatrOperations */,
+				5BE1699324751E6800A5711F /* LUP */,
+				5BE1699224751E5700A5711F /* QR */,
 				FDC5FAAE2445B95D000FEBD7 /* main.c */,
 			);
 			path = LUP;
@@ -119,7 +184,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA0893724743FDC00B08BD8 /* QR.c in Sources */,
+				5BA0893A2474403500B08BD8 /* MatrOperations.c in Sources */,
+				5BA089432474675A00B08BD8 /* Jacobi_Seidel.c in Sources */,
 				FDC5FAAF2445B95D000FEBD7 /* main.c in Sources */,
+				5BA0893D2474413B00B08BD8 /* LUP.c in Sources */,
+				5BA08940247441A300B08BD8 /* VectOperations.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
