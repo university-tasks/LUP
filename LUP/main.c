@@ -201,6 +201,7 @@ int main() {
                 for(int i = 0; i < N; ++i) {
                   for(int j = 0; j < N; ++j) {
                     A1[i][j] = A[i][j];
+                    AExt[i][j] = A[i][j];
                   }
                 }
                 
@@ -229,7 +230,7 @@ int main() {
                     AExt[i][N] = b[i];
                 }
                 
-                rankExt = rankMatr(AExt, N, M);
+                rankExt = rankMatr(AExt, N, N+1);
                 printf("Rank of an extended singular matrix: ");
                 printf("%i%s",rankExt,"\n");
                 
@@ -265,5 +266,5 @@ int main() {
     
     return 0;
 }
-//-----------------------------------------------------------
+
 
