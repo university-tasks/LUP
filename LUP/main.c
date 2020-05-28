@@ -76,7 +76,7 @@ int main() {
     switch (action) {
         case 1:
             
-            generateSingularMatr(A, N);
+            generateMatr(A, N);
             for (int i = 0; i < N; ++i) {
                 for (int j = 0; j < N; ++j) {
                     A1[i][j] = A[i][j];
@@ -193,7 +193,18 @@ int main() {
                 condNum(A, IA, N, cond);
                 break;
             case 5:
-                rank = rankMatr(U, N, N);
+                
+                generateSingularMatr(A, N);
+                printf("Singular matrix:\n");
+                showMatr(A, N, N);
+
+                for(int i = 0; i < N; ++i) {
+                  for(int j = 0; j < N; ++j) {
+                    A1[i][j] = A[i][j];
+                  }
+                }
+                
+                rank = rankMatr(A, N, N);
                 printf("Rank of a singular matrix: ");
                 printf("%i%s", rank,"\n");
     

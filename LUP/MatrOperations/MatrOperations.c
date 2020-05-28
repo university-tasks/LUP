@@ -96,43 +96,33 @@ void swap(double **mat, int row1,int row2, int col) {
 
 double rankMatr(double** A, int N, int M) {
 
-    double **Temp = (double **)malloc(N*sizeof(double *));
-    for(int i = 0; i < N; i++) {
-        Temp[i] = (double *)malloc(M*sizeof(double));
-    }
-    
-    for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < M; ++j) {
-            Temp[i][j] = A[i][j];
-        }
-    }
-    
     double rank = M;
     bool *arr = (bool*)malloc(sizeof(bool) * N);
 
-    for (int i = 0; i < N; ++i) arr[i] = 0;
+    for (int i = 0; i < N; i++) arr[i] = 0;
 
     for (int i = 0; i < M; ++i) {
 
         int j;
         for (j = 0; j < N; ++j)
-            if (!arr[j] && fabs(Temp[j][i]) > myExp)
+            if (!arr[j] && fabs(A[j][i]) > myExp)
                 break;
         if (j == N)
             --rank;
         else {
             arr[j] = true;
             for (int p = i + 1; p < M; ++p)
-                Temp[j][p] /= Temp[j][i];
+                A[j][p] /= A[j][i];
             for (int k = 0; k < N; ++k)
-                if (k != j && fabs(Temp[k][i]) > myExp)
+                if (k != j && fabs(A[k][i]) > myExp)
                     for (int p = i + 1; p < M; ++p)
-                        Temp[k][p] -= Temp[j][p] * Temp[k][i];
+                        A[k][p] -= A[j][p] * A[k][i];
         }
     }
 
     return rank;
 }
+
 
 double **numMultMatr(double a, double **A, int N, int M) {
 

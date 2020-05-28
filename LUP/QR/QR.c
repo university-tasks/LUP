@@ -85,7 +85,6 @@ void checkQR(double **A,double **Q, double **R, int N) {
     }
     printf("ПРОВЕРКА ПРОЙДЕНА\n");
 }
-
 double * gauss(double **a, double *y, int N) {
   double max;
   int k, index;
